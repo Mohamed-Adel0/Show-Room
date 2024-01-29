@@ -1,0 +1,299 @@
+.abb {
+  width: 73px;
+  position: fixed;
+  z-index: 10;
+}
+.parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+}
+
+.parent .container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  flex-direction: column;
+}
+.container .menu {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  background-color: transparent;
+}
+.container .model {
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.container .model h3 {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  letter-spacing: 0.6px;
+}
+
+.container .model .bar {
+  transform: rotate(-90deg);
+  width: 1px;
+  height: 50px;
+  background-color: #ffffff91;
+}
+.container .model .bar .color {
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+}
+
+.container .share {
+  overflow: hidden;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.container .share h3 {
+  transform: rotate(-90deg);
+  font-weight: 700 !important;
+  font-size: 15px !important;
+}
+.container .share button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 100 !important;
+}
+.container h3 {
+  color: #ffffffb6;
+  font-size: 14px;
+  font-weight: 400;
+}
+.menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+.menu h1 {
+  letter-spacing: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: serif;
+  transition: 0.6s;
+}
+/* Hna element el Links 3shan el events elly hy7sal */
+.parent .navbar {
+  width: 21%;
+  height: 100%;
+  position: fixed;
+  left: -100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(44, 44, 44);
+  transition: 0.6s;
+  z-index: 5 !important;
+}
+.back {
+  left: 0 !important;
+}
+.hide {
+  left: -100% !important;
+}
+/* Hna Mkan el descraption fo2 */
+.navbar .descraption {
+  width: 80%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  border-bottom: 1px solid #ece2e21c;
+}
+.navbar .descraption button {
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.descraption h4 {
+  color: #8bb654;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-style: italic;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+/* Hna mkan el ul elly gowaha Links */
+.navbar ul {
+  list-style: none;
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 30px; */
+}
+.navbar ul li {
+  border-bottom: 1px solid #ece2e21c;
+
+  width: 80%;
+  padding: 15px 0;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: #fff;
+}
+/* Hna mkan el descraption bta3y */
+.navbar .info {
+  height: 30%;
+  width: 80%;
+  border-top: 1px solid #ece2e21c;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+}
+.navbar .info p {
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 20px;
+  color: #ffffff80;
+}
+.navbar .info .icons {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.info .icons button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff80;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+/* Here for media Query */
+/* @media (max-width: 2560px) {
+      .navbar {
+        width: 20% ;
+      }
+      .navbar h4 {
+        font-size: 25px ;
+      }
+      .navbar a {
+        font-size: 25px ;
+      }
+      .navbar p {
+        font-size: 25px ;
+        line-height: 30px ;
+      }
+      .navbar .icons button {
+        font-size: 30px ;
+      }
+    } */
+@media (max-width: 1024px) {
+  .navbar {
+    width: 30% !important;
+  }
+  .navbar h4 {
+    font-size: 14px !important;
+  }
+  .navbar a {
+    font-size: 12px !important;
+  }
+  .navbar p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .abb {
+    display: none;
+  }
+  .navbar {
+    width: 45% !important;
+  }
+  .navbar h4 {
+    font-size: 12px !important;
+  }
+  .navbar a {
+    font-size: 12px !important;
+  }
+  .navbar p {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 425px) {
+  .navbar {
+    width: 50% !important;
+  }
+  .navbar h4 {
+    font-size: 8px !important;
+  }
+  .navbar a {
+    font-size: 12px !important;
+  }
+  .navbar p {
+    font-size: 9px !important;
+    line-height: 15px !important;
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
+    width: 50% !important;
+  }
+  .navbar h4 {
+    font-size: 8.9px !important;
+    letter-spacing: 0;
+  }
+  .navbar a {
+    font-size: 10px !important;
+  }
+  .navbar p {
+    font-size: 7px !important;
+    line-height: 10px !important;
+  }
+}
+
+/* here for Hover */
+.icons button:hover {
+  transform: scale(1.2) rotate(360deg);
+  transition: 0.6s;
+  color: #8bb654;
+}
+.navbar a:hover {
+  color: #8bb654;
+}

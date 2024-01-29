@@ -1,0 +1,39 @@
+.parent {
+  width: 100%;
+  min-height: 50vh;
+  background-color: #282828;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 0;
+}
+.container {
+  width: 93%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  flex-direction: column;
+  color: #fff;
+}
+.card:nth-child(2) {
+  width: 650px;
+}
+.card h1 {
+  font-weight: 600;
+}
+.card p {
+  font-size: 18px;
+  color: #ffffff9d;
+}

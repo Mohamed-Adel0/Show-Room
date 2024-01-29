@@ -1,0 +1,102 @@
+.parent {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #282828;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px 0;
+  flex-direction: column;
+  gap: 20px;
+}
+.container {
+  width: 93%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 230px;
+  height: 100%;
+  flex-direction: column;
+  color: #fff;
+}
+.card:nth-child(2) {
+  width: 650px;
+}
+.card h1 {
+  font-weight: 600;
+}
+.card p {
+  font-size: 18px;
+  color: #ffffff9d;
+}
+.twoContainer {
+  width: 93%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.twoContainer .card {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px 0;
+  /* border-bottom: 0.5px solid #ffffff7c; */
+  border-top: 0.5px solid #ffffff7c;
+}
+.twoContainer .card:nth-child(3) {
+  border-bottom: 0.5px solid #ffffff7c;
+}
+.twoContainer .card h5 {
+  font-weight: 600;
+}
+.twoContainer .card button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Here for Hover */
+.twoContainer .card:hover button {
+  color: #8bb654;
+}
+
+/* Here for media Query  */
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .container .card {
+    align-items: flex-start;
+  }
+  .container .card:nth-child(2) {
+    width: 95%;
+  }
+  .twoContainer {
+    width: 95%;
+    align-items: flex-start;
+  }
+  .twoContainer .card {
+    width: 90% !important;
+  }
+}

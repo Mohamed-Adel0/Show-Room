@@ -1,0 +1,95 @@
+.parent {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  background-color: #282828;
+}
+.container {
+  width: 93%;
+  min-height: 40vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  gap: 50px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  flex-direction: column;
+  color: #fff;
+}
+.card:nth-child(2) {
+  width: 650px;
+}
+.card h1 {
+  font-weight: 600;
+}
+.card p {
+  font-size: 18px;
+  color: #ffffff9d;
+}
+/* 2nd Container */
+.twocontainer {
+  width: 95%;
+  height: 100vh;
+  background-image: url(../../Picture/nor_portfolio_item__30.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.twocontainer .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+}
+
+/* Here for Hover */
+.button {
+  display: flex;
+  justify-content: center;
+  color: #282828;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: linear-gradient(30deg, #fff 20%, #fff 80%);
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running
+    pulse;
+  align-items: center;
+  border: 0;
+}
+.button:is(:hover, :focus) {
+  transform: scale(1.2);
+}
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 45px rgba(193, 244, 246, 0);
+  }
+}
+.twocontainer .card:hover {
+  background-color: #28282856;
+  transition: 0.6s;
+}
+/* Here for Media Query */
+@media (max-width: 768px) {
+  .twocontainer {
+    width: 100%;
+  }
+  .container .card {
+    align-items: flex-start;
+  }
+}
